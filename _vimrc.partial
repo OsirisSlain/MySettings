@@ -1,0 +1,36 @@
+"this is a partial _vimrc -- it should be pasted into the proper place in an
+"autogerated _vimrc.  In windows this is usually under the line 'behave mswin'
+
+"use 4 columns and tabs rather than spaces
+set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+
+"remove the menubar and the toolbar
+set guioptions-=m guioptions-=T
+
+"Consolas needs to be installed for this to set the font
+set guifont=Consolas:h11:cANSI
+
+"the default size of the window
+set lines=50 columns=120
+
+"turn off all wrapping
+set nowrap formatoptions-=t textwidth=0 wrapmargin=0
+
+"turn line numbers on
+set number
+
+"set colors. file needs to exist in colors directory
+:colo osiriscolors
+set background=dark
+
+"use the windows clipboard
+set clipboard=unnamed
+
+"remap space and backspace
+noremap <BS> <PageUp>
+noremap <Space> <PageDown>
+
+"use custom folders to store temp files rather than working dir
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
